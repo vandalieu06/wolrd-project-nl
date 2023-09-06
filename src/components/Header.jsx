@@ -16,11 +16,11 @@ export function Header (props) {
                 <a href="/#">Bloj</a>
                 <a href="/#">About me</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
-                    <FaBars />
+                    <FaTimes />
                 </button>
             </nav>
             <button className="nav-btn" onClick={showNavBar}>
-                <FaTimes />
+                <FaBar />
             </button>
         </header>
     )
