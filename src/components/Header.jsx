@@ -20,7 +20,7 @@ export function Header (props) {
                 </button>
             </nav>
             <button className="nav-btn" onClick={showNavBar}>
-                <FaBar />
+                <FaBars />
             </button>
         </header>
     )
