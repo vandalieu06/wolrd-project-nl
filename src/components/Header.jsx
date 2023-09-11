@@ -12,19 +12,19 @@ export function Header () {
       <h3><BsBook className='icono'/></h3>
       <nav ref={navRef}>
         <NavLink 
-          to="/react-header/"
+          to="/wolrd-project-nl/"
           className={( {isActive} ) => isActive ? 'link link--active' : 'link'}
         >
           Inico
         </NavLink>
         <NavLink 
-          to="/react-header/donaciones"
+          to="/wolrd-project-nl/donaciones"
           className={( {isActive} ) => isActive ? 'link link--active' : 'link'}
         >
           Donaciones
         </NavLink>
         <NavLink 
-          to="/react-header/novelas-activas"
+          to="/wolrd-project-nl/novelas-activas"
           className={( {isActive} ) => isActive ? 'link link--active' : 'link'}
         >
           Novelas Activas</NavLink>

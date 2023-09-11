@@ -12,10 +12,10 @@ export function App () {
     <Router>
       <Header />
       <Routes>
-        <Route path='/react-header/' element={<HomePage />} />
-        <Route path='/react-header/donaciones' element={<DonacionesPage />} />
-        <Route path='/react-header/novelas-activas' element={<NovelasActivasPage />} />
-        <Route path='/react-header/*' element={<NotFoundPage />} />
+        <Route path='/wolrd-project-nl/' element={<HomePage />} />
+        <Route path='/wolrd-project-nl/donaciones' element={<DonacionesPage />} />
+        <Route path='/wolrd-project-nl/novelas-activas' element={<NovelasActivasPage />} />
+        <Route path='/wolrd-project-nl/*' element={<NotFoundPage />} />
       </Routes>
     </Router>
     )
