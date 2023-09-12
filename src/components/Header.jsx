@@ -12,30 +12,30 @@ export function Header () {
       <h3><BsBook className='icono'/></h3>
       <nav ref={navRef}>
         <NavLink 
-          to="/wolrd-project-nl/"
+          to="./wolrd-project-nl/"
           className={( {isActive} ) => isActive ? 'link link--active' : 'link'}
         >
           Inico
         </NavLink>
         <NavLink 
-          to="/wolrd-project-nl/donaciones"
+          to="./wolrd-project-nl/donaciones"
           className={( {isActive} ) => isActive ? 'link link--active' : 'link'}
         >
           Donaciones
         </NavLink>
         <NavLink 
-          to="/wolrd-project-nl/novelas-activas"
+          to="./wolrd-project-nl/novelas-activas"
           className={( {isActive} ) => isActive ? 'link link--active' : 'link'}
         >
           Novelas Activas</NavLink>
         <NavLink 
-          to="/"
+          to="./"
           className={( {isActive} ) => isActive ? 'link link--active' : 'link'}
         >
           Novelas Finalizadas
         </NavLink>
         <NavLink 
-          to="/"
+          to="./"
           className={( {isActive} ) => isActive ? 'link link--active' : 'link'}
         >
           Esternos del Mes
