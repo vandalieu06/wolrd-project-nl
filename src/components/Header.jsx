@@ -1,4 +1,6 @@
 import { useRef } from 'react';
+
+/* Iconos */
 import {FaBars, FaTimes, FaReact} from 'react-icons/fa';
 import {BsBook} from 'react-icons/bs';
 import {NavLink} from 'react-router-dom';
@@ -29,17 +31,18 @@ export function Header () {
         >
           Novelas Activas</NavLink>
         <NavLink 
-          to="./"
+          to="./novelas-finalizadas"
           className={( {isActive} ) => isActive ? 'link link--active' : 'link'}
         >
           Novelas Finalizadas
         </NavLink>
         <NavLink 
-          to="./"
+          to="./estrenos-del-mes"
           className={( {isActive} ) => isActive ? 'link link--active' : 'link'}
         >
           Esternos del Mes
         </NavLink>
+
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
@@ -50,3 +53,7 @@ export function Header () {
     </header>
   )
 }
+
+//RECORDAR COSAS
+//isACtive --> No me acuredo totalmente cual es.
+//useRef() --> Recordar que es.

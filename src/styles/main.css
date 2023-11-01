@@ -5,7 +5,12 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
-	user-select: none;
+	/*user-select: none;*/
+}
+
+/*Canvio de color al seleccionar un parrafao, imagenes, etc.*/
+*::selection{
+	background-color: rgb(179, 173, 184);
 }
 
 :root {
@@ -118,27 +123,30 @@ header .nav-btn {
 /*DonacionesPage*/
 .donaciones{
 	width: 100%;
+	height: calc(100vh - 80px);
 	background: url(../assets/images/donaciones-wallpaper-waifu1-reverse.jpg) center top -50px scroll no-repeat;
 	background-size: cover;
 }
 .donaciones__container{
+	position: relative;
 	width: 100%;
-	height: 700px;
+	height: 100%;
 	display: flex;
-	align-items: center;
-	justify-content: start;
 }
 .donaciones__content{
 	box-sizing: border-box;
-	width: 500px;
-	height: 85%;
-	padding: 40px 30px;
-	background-color: rgba(255 255 255 /.8);
-	transform: translateX(300px);
+	width: 700px;
+	height: 100%;
+	padding: 40px 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(150, 124, 172, 0.97);
+	color: whitesmoke;
 }
 .donaciones__title{
 	font-weight: 600;
-	font-size: 3.5rem;
+	font-size: 5rem;
 	text-align: center;
 }
 .donaciones__subtitle{
@@ -147,17 +155,27 @@ header .nav-btn {
 	line-height: 1.5rem;
 }
 .donaciones__paragraph{
-	margin-block-start: 30px;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 }
 .donaciones__text{
 	font-weight: 400;
-	font-size: 1.2rem;
+	font-size: 1.35rem;
 	line-height: 1.5rem;
 }
 .donaciones__text--bold {
 	font-weight: 600;
-	font-size: 1.4rem;
+	font-size: 1.55rem;
 	line-height: 1.5rem;
+}
+.donaciones__text--left{
+	margin-left: 10px;
+}
+.donaciones__image--logo{
+	width: 120px;
+	margin:0 auto 0 ;
 }
 
 /*Novaleas Activas Page*/
