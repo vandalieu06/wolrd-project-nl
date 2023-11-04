@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
   import { DonacionesPage } from './pages/DonacionesPage.jsx';
   import { NovelasActivasPage } from './pages/NovelasActicasPage.jsx';
   import { NotFoundPage } from './pages/NotFoundPage.jsx';
+import { InfoNovel } from './pages/InfoNovelPage.jsx';
 
 export function App () {
   return (
@@ -14,6 +15,7 @@ export function App () {
         <Route path='/' element={<HomePage />} />
         <Route path='/donaciones' element={<DonacionesPage />} />
         <Route path='/novelas-activas' element={<NovelasActivasPage />} />
+          <Route path='/novelas-activas/:id' element={<InfoNovel />} />
         <Route path='/*' element={<NotFoundPage />} />
       </Routes>
     </Router>

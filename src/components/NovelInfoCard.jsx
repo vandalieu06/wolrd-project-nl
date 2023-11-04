@@ -1,8 +1,14 @@
+import { Link } from "react-router-dom";
 
-export function NovelInfoCard () {
+export function NovelInfoCard ( {tittle, link, src} ) {
   return (
-    <>
-      <h1>Novelas 1</h1>
-    </>
+    <article className="novelCard">
+      <img src={src} alt="" className="novelCard__img" />
+      <button className="novelCard__button">
+        <Link to={link} className="novelCard__link">
+          {tittle}
+        </Link>
+      </button>
+    </article>
   )
 }

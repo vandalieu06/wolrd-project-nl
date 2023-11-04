@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Titillium Web", sans-serif;
+	font-family: "Poppins", sans-serif;
 	/*user-select: none;*/
 }
 
@@ -93,30 +92,30 @@ header .nav-btn {
 .home__container{
 	box-sizing: border-box;
 	width: 100%;
-	height: 700px;
+	height: calc(100vh - 80px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(0 0 0 /.2);
+	background-color: rgba(0 0 0 /.4);
 }
 .home__article{
-	width: 900px;
+	width: 1200px;
 	height: 400px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: #fff;
+	color: rgb(241, 235, 235);
 }
 .home__title{
-	font-size: 6rem;
-	font-weight: 600;
+	font-size: 6.5rem;
+	font-weight: 700;
 	text-align: center;
 }
 .home__subtitle{
-	font-size: 2rem;
+	font-size: 2.35rem;
 	font-weight: 400;
-	text-shadow: 0 0 5px black;
+	text-shadow: 2px 2px 2px rgb(150 124 172 /1);
 	text-align: center;
 }
 
@@ -148,6 +147,7 @@ header .nav-btn {
 	font-weight: 600;
 	font-size: 5rem;
 	text-align: center;
+	margin-bottom: 76px;
 }
 .donaciones__subtitle{
 	font-weight: 500;
@@ -181,7 +181,7 @@ header .nav-btn {
 /*Novaleas Activas Page*/
 .novelas-activas{
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 80px);
 	background: url('../assets/images/novelas-activas-wallpaper-japnesse-picture.jpg') fixed bottom center  no-repeat;
 	background-size: cover;
 }
@@ -189,6 +189,8 @@ header .nav-btn {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0 0 0 /.2);	
+	overflow-y: auto;
+	scroll-behavior: smooth;
 }
 .novelas-activas__container{
 	max-width: 1200px;
@@ -198,6 +200,90 @@ header .nav-btn {
 	font-size: 5rem;
 	text-align: center;
 	color: rgba(255 255 255 /.9);
+	margin: 100px 0;
+}
+.novelas-activas__content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	justify-items: center;
+	align-items: start;
+	gap: 70px 0;
+}
+
+/*Card Novels*/
+.novelCard{
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: aliceblue;
+}
+.novelCard__img{
+	width: 200px;
+	height: 300px;
+	object-fit: cover;
+	object-position: center center;
+}
+.novelCard__button{
+	box-sizing: border-box;
+	width: 200px;
+	padding: 10px 10px;
+	margin: 0;
+	background-color: #1d1f27;
+	border: none;
+	font-size: 1rem;
+	transition: all 0.3s ease-in;
+}
+.novelCard__link{
+	text-decoration: none;
+	color: aliceblue;
+}
+.novelCard__button:hover{
+	background-color: rgba(150, 124,172, 1);
+}
+
+/*Novel Info pAGE*/
+.novel-info{
+	width: 100%;
+	height: calc(100vh - 80px);
+	background: url(../assets/images/info-novels-background.jpg) center center no-repeat;
+	background-size: cover;
+}
+.novel-info__container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+	background-color: rgba(0 0 0 /0.15);
+	overflow-y: auto;
+}
+.novel-info__textcontent{
+	width: 1200px;
+}
+.novel-info__tittle{
+	color: white;
+	font-size: 4rem;
+	font-weight: 700;
+	text-align:  center; 
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+.novel-info__description{
+	font-size: 1.7rem;
+	color: white;
+	font-weight: 500;
+	text-align: justify;
+}
+.novel-info__volumes{
+	width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	justify-items: center;
+	align-items: start;
+	gap: 70px 0;
 }
 
 /*Media Queries*/
