@@ -11,13 +11,41 @@ export let datosNovelas = [
       "id": 1,
       "tittle": "Amagi Brillant Park",
       "description": 'Sinopsis: La historia toma como protagonista a Seiya Kanie, un estudiante de secundaria que es invitado a una cita en un parque de atracciones por una estudiante guapa recién transferida a su instituto llamada Isuzu Sento. Allí le presentan a Ratifa, una princesa "real" y gerente del parque, quien le pide que sea el gerente en funciones de este "parque de atracciones decepcionante en los suburbios de Tokio".',
-      "src": "https://static.wixstatic.com/media/a70849_21cd042a5906494aba2a866d6bcd203e~mv2.jpg/v1/fill/w_191,h_273,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Cover.jpg"
+      "src": "https://static.wixstatic.com/media/a70849_21cd042a5906494aba2a866d6bcd203e~mv2.jpg/v1/fill/w_191,h_273,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Cover.jpg",
+      "volumes": [
+        {
+          "name": "Volume 1",
+          "src": "/"          
+        },
+        {
+          "name": "Volume 2",
+          "src": "/"          
+        },
+        {
+          "name": "Volume 3",
+          "src": "/"          
+        },
+      ]
     },
     {
       "id": 2,
       "tittle": "An Archdemon's Dilemna",
       "description": "Sinopsis: Se teme a Zagan como un mago malvado, es torpe y tiene una lengua afilada, y una vez más tuvo que sofocar a los ladrones que invadieron su territorio cuando estaba investigando esa mañana. En una oscura subasta, encuentra a una elfa esclava blanca, Nephie, que posee una belleza sin igual. Enamorarse de ella a primera vista, él usa su fortuna para comprarla, pero tan pobre como él es socialmente, él no entiende cómo conectarse con ella. Por lo tanto, comienza la torpe convivencia del mago que no puede transmitir su amor, y la esclava que añora a su maestro pero no entiende cómo hacerlo aparecer. ",
-      "src": "https://static.wixstatic.com/media/a70849_a8d45d52486442c885590e686bc1f2fd~mv2.jpg/v1/fill/w_195,h_273,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Cover.jpg"
+      "src": "https://static.wixstatic.com/media/a70849_a8d45d52486442c885590e686bc1f2fd~mv2.jpg/v1/fill/w_195,h_273,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Cover.jpg",
+      "volumes": [
+        {
+          "name": "Volume 1",
+          "src": "/"          
+        },
+        {
+          "name": "Volume 2",
+          "src": "/"          
+        },
+        {
+          "name": "Volume 3",
+          "src": "/"          
+        },
+      ]
     },
     {
       "id": 3,

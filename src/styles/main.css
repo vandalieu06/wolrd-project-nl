@@ -286,6 +286,25 @@ header .nav-btn {
 	gap: 70px 0;
 }
 
+/*Volume Download*/ 
+.volume-download{
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+.volume-download__btn{
+	width: 150px;
+	border: none;
+	background-color: #1d1f27;
+	padding: 10px;
+}
+.volume-download__link{
+	color: aliceblue;
+	text-decoration: none;
+}
+
 /*Media Queries*/
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {

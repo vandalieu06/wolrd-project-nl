@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { datosNovelas } from "../API/novelasAPI";
 import { VolumeDownload } from "../components/VolumeDownloadCard";
-
+import { NotFoundPage } from "../pages/NotFoundPage";
 
 export function InfoNovel () {
   const { id } = useParams();
@@ -10,6 +10,8 @@ export function InfoNovel () {
 
   if (!novel){
     return <div>Error en el enlace, le agradeceria que nos infromara sobre el enlaçe que teine el error al siguiente correo: claurejhonny188@gmail.com</div>
+  } else if (!novel.volumes){
+    return <NotFoundPage />
   }
 
   return (
@@ -20,7 +22,7 @@ export function InfoNovel () {
           <p className="novel-info__description">{novel.description}</p>
         </article>  
         <article className="novel-info__volumes">
-          <VolumeDownload />            
+          {novel.volumes.map( (volume) => <VolumeDownload link={volume.src} tittle={volume.name} src={novel.src} /> )}           
         </article>      
       </div>
     </section>
