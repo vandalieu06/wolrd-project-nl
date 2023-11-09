@@ -1,11 +1,12 @@
-import { Header } from './components/Header.jsx';
 import './styles/main.css';
+import { Header } from './components/Header.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
   import { HomePage } from './pages/HomePage.jsx';
   import { DonacionesPage } from './pages/DonacionesPage.jsx';
   import { NovelasActivasPage } from './pages/NovelasActicasPage.jsx';
   import { NotFoundPage } from './pages/NotFoundPage.jsx';
-import { InfoNovel } from './pages/InfoNovelPage.jsx';
+    import { InfoNovel } from './pages/InfoNovelPage.jsx';
+import { Footer } from './components/Footer.jsx';
 
 export function App () {
   return (
@@ -18,6 +19,7 @@ export function App () {
           <Route path='/novelas-activas/:id' element={<InfoNovel />} />
         <Route path='/*' element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </Router>
     )
 }

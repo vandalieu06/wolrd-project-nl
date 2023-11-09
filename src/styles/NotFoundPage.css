@@ -1,0 +1,15 @@
+.error-page{
+    width: 100%;
+    height: calc(100vh - 80px);
+    color: aliceblue;
+}
+.error-page__container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.error-page__img{
+    width: 500px;
+}

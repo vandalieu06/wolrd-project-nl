@@ -1,10 +1,19 @@
 
 // ESTRUCTURA DE DATOS API NOVELAS
-//{
-//  "id": number,
-//  "tittle": "",
-//  "src": ""
-//}
+
+const strcutureNovel = {
+  "id": Number,
+  "tittle": String,
+  "src": String,
+  "volumes": [
+    {
+      "name": String,
+      "src": String
+    }
+  ]
+}
+
+//Datos Novelas
 
 export let datosNovelas = [
     {
